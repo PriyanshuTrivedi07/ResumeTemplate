@@ -10,11 +10,18 @@ font-family: 'Teko', sans-serif; */
 * {
     scroll-behavior: smooth;
 }
-
+:root{
+    --bg-color: #fff;
+    --font-color: #424242;
+}
+[data-theme="dark"]{
+    --bg-color: #161625;
+    --font-color: #e1e1ff;
+}
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: rgba(245, 245, 245, 0.767);
-    color: #121212;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: 'Poppins', sans-serif; 
     transition: all 0.3s ease-in-out;
 }
 
@@ -23,10 +30,10 @@ body {
     color: rgb(255, 232, 197);
 }
 
-.dark-mode {
+/* .dark-mode {
     background-color: #121212;
     color: rgba(245, 245, 245, 0.767);
-}
+} */
 
 .darkmode-btn {
     position: fixed;
